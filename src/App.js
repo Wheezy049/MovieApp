@@ -162,11 +162,14 @@ function App() {
             <p className="text-sm text-red-500">{error}</p>
           </div>
         ) : (
+          <>
+          <h1 className="font-bold text-4xl text-white p-2">All Movie</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {data.map((movie) => (
               <MovieCard key={movie.id} movie={movie} />
             ))}
           </div>
+          </>
         )}
         {/* Add more content here */}
       </div>
